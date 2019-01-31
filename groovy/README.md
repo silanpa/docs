@@ -16,20 +16,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.5.5-jdk7`, `2.5-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6c9d05794eddd2e8a9feb7fa09650bfcf96e9083/jdk7/Dockerfile)
--	[`2.5.5-jre7`, `2.5-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6c9d05794eddd2e8a9feb7fa09650bfcf96e9083/jre7/Dockerfile)
 -	[`2.5.5-jdk7-alpine`, `2.5-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6c9d05794eddd2e8a9feb7fa09650bfcf96e9083/jdk7-alpine/Dockerfile)
 -	[`2.5.5-jre7-alpine`, `2.5-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6c9d05794eddd2e8a9feb7fa09650bfcf96e9083/jre7-alpine/Dockerfile)
--	[`2.5.5-jdk8`, `2.5-jdk8`, `2.5.5-jdk`, `2.5-jdk`, `jdk8`, `jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6c9d05794eddd2e8a9feb7fa09650bfcf96e9083/jdk8/Dockerfile)
--	[`2.5.5-jre8`, `2.5-jre8`, `2.5.5-jre`, `2.5-jre`, `2.5.5`, `2.5`, `jre8`, `jre`, `latest` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6c9d05794eddd2e8a9feb7fa09650bfcf96e9083/jre8/Dockerfile)
 -	[`2.5.5-jdk8-alpine`, `2.5-jdk8-alpine`, `2.5.5-jdk-alpine`, `2.5-jdk-alpine`, `jdk8-alpine`, `jdk-alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6c9d05794eddd2e8a9feb7fa09650bfcf96e9083/jdk8-alpine/Dockerfile)
 -	[`2.5.5-jre8-alpine`, `2.5-jre8-alpine`, `2.5.5-jre-alpine`, `2.5-jre-alpine`, `2.5.5-alpine`, `2.5-alpine`, `jre8-alpine`, `jre-alpine`, `alpine` (*jre8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6c9d05794eddd2e8a9feb7fa09650bfcf96e9083/jre8-alpine/Dockerfile)
--	[`2.5.5-jdk11`, `2.5-jdk11`, `jdk11` (*jdk11/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6c9d05794eddd2e8a9feb7fa09650bfcf96e9083/jdk11/Dockerfile)
--	[`2.5.5-jre11`, `2.5-jre11`, `jre11` (*jre11/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/6c9d05794eddd2e8a9feb7fa09650bfcf96e9083/jre11/Dockerfile)
--	[`3.0.0-alpha-4-jdk8`, `3.0-jdk8`, `3.0.0-alpha-4-jdk`, `3.0-jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/60e5c055b494a6f90a7041be30ce869d156b7c16/jdk8/Dockerfile)
--	[`3.0.0-alpha-4-jre8`, `3.0-jre8`, `3.0.0-alpha-4-jre`, `3.0-jre`, `3.0.0-alpha-4`, `3.0` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/60e5c055b494a6f90a7041be30ce869d156b7c16/jre8/Dockerfile)
 -	[`3.0.0-alpha-4-jdk8-alpine`, `3.0-jdk8-alpine`, `3.0.0-alpha-4-jdk-alpine`, `3.0-jdk-alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/60e5c055b494a6f90a7041be30ce869d156b7c16/jdk8-alpine/Dockerfile)
 -	[`3.0.0-alpha-4-jre8-alpine`, `3.0-jre8-alpine`, `3.0.0-alpha-4-jre-alpine`, `3.0-jre-alpine`, `3.0.0-alpha-4-alpine`, `3.0-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/60e5c055b494a6f90a7041be30ce869d156b7c16/jre8-alpine/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/groovy/badge/icon) (`arm32v6/groovy` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/groovy/)
 
 # Quick reference
 
@@ -75,7 +69,7 @@ Note that if you are mounting a volume and the uid running Docker is not `1000`,
 
 ## Running a Groovy script
 
-`docker run --rm -v "$PWD":/home/groovy/scripts -w /home/groovy/scripts groovy groovy <script> <script-args>`
+`docker run --rm -v "$PWD":/home/groovy/scripts -w /home/groovy/scripts arm32v6/groovy groovy <script> <script-args>`
 
 ## Reusing the Grapes cache
 
@@ -83,18 +77,18 @@ The local Grapes cache can be reused across containers by creating a volume and 
 
 ```console
 docker volume create --name grapes-cache
-docker run --rm -it -v grapes-cache:/home/groovy/.groovy/grapes groovy
+docker run --rm -it -v grapes-cache:/home/groovy/.groovy/grapes arm32v6/groovy
 ```
 
 # Image Variants
 
-The `groovy` images come in many flavors, each designed for a specific use case.
+The `arm32v6/groovy` images come in many flavors, each designed for a specific use case.
 
-## `groovy:<version>`
+## `arm32v6/groovy:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `groovy:<version>-alpine`
+## `arm32v6/groovy:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
