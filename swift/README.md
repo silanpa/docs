@@ -16,10 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.1`, `4.2`, `4`, `latest` (*4.2/Dockerfile*)](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.2/Dockerfile)
--	[`4.1.3`, `4.1` (*4.1/Dockerfile*)](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.1/Dockerfile)
--	[`4.0.3`, `4.0` (*4.0/Dockerfile*)](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/4.0/Dockerfile)
--	[`3.1.1`, `3.1`, `3` (*3.1/Dockerfile*)](https://github.com/apple/swift-docker/blob/34aa283f9b3473ab22b2282f71773781b121af19/3.1/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `swift` does not support the currently selected architecture (`ppc64le`).
 
 # Quick reference
 
@@ -69,19 +68,19 @@ To learn more about the programming language, visit [swift.org](https://swift.or
 Swift requires [a little bit of extra security privilege](https://github.com/apple/swift-docker/issues/9#issuecomment-272527182) to run the REPL. The following command creates an ephemeral container, attaches your terminal to it and starts the Swift REPL. A great way to try out pre-release builds!
 
 ```bash
-docker run --cap-add sys_ptrace -it --rm swift swift
+docker run --cap-add sys_ptrace -it --rm ppc64le/swift swift
 ```
 
 ##### Pull the Docker Image From Docker Hub:
 
 ```bash
-docker pull swift
+docker pull ppc64le/swift
 ```
 
 ##### Create a Container from the Image and Attach It:
 
 ```bash
-docker run  -it --name swiftfun swift /bin/bash
+docker run  -it --name swiftfun ppc64le/swift /bin/bash
 ```
 
 ##### To Start and Attach Your Image Later:
