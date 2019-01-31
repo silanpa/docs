@@ -19,24 +19,13 @@ WARNING:
 ## Simple Tags
 
 -	[`linux` (*amd64/hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-seattle/Dockerfile)
--	[`nanoserver-sac2016` (*amd64/hello-seattle/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-sac2016/Dockerfile)
--	[`nanoserver-1709` (*amd64/hello-seattle/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1709/Dockerfile)
--	[`nanoserver-1803` (*amd64/hello-seattle/nanoserver-1803/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1803/Dockerfile)
--	[`nanoserver-1809` (*amd64/hello-seattle/nanoserver-1809/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1809/Dockerfile)
 
 ## Shared Tags
 
 -	`latest`:
 	-	[`linux` (*amd64/hello-seattle/Dockerfile*)](https://github.com/docker-library/hello-world/blob/b715c35271f1d18832480bde75fe17b93db26414/amd64/hello-seattle/Dockerfile)
-	-	[`nanoserver-sac2016` (*amd64/hello-seattle/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-sac2016/Dockerfile)
-	-	[`nanoserver-1709` (*amd64/hello-seattle/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1709/Dockerfile)
-	-	[`nanoserver-1803` (*amd64/hello-seattle/nanoserver-1803/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1803/Dockerfile)
-	-	[`nanoserver-1809` (*amd64/hello-seattle/nanoserver-1809/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1809/Dockerfile)
--	`nanoserver`:
-	-	[`nanoserver-sac2016` (*amd64/hello-seattle/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-sac2016/Dockerfile)
-	-	[`nanoserver-1709` (*amd64/hello-seattle/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1709/Dockerfile)
-	-	[`nanoserver-1803` (*amd64/hello-seattle/nanoserver-1803/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1803/Dockerfile)
-	-	[`nanoserver-1809` (*amd64/hello-seattle/nanoserver-1809/Dockerfile*)](https://github.com/docker-library/hello-world/blob/9c93e37114a7fe99b5fc0d776e0b8dff99cbbb75/amd64/hello-seattle/nanoserver-1809/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/hello-seattle/badge/icon) (`amd64/hello-seattle` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/hello-seattle/)
 
 # Quick reference
 
@@ -71,7 +60,7 @@ WARNING:
 This image is a vanity variant of [the `hello-world` image](https://hub.docker.com/_/hello-world/) created specifically for [DockerCon 2016](http://2016.dockercon.com/). Its use is discouraged.
 
 ```console
-$ docker run hello-seattle
+$ docker run amd64/hello-seattle
 
 Hello from DockerCon 2016 (Seattle)!
 This message shows that your installation appears to be working correctly.
