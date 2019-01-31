@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8`, `8u202`, `8-al2-full`, `latest` (*Dockerfile*)](https://github.com/corretto/corretto-8-docker/blob/00075d9caa52634b489867a1a8c5a146b1695d0a/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `amazoncorretto` does not support the currently selected architecture (`windows-amd64`).
 
 # Quick reference
 
