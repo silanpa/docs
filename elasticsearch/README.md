@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.5.4` (*6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/deabc2adbaa9251213071e5b46c6742ab781dc84/6/Dockerfile)
--	[`5.6.14`, `5.6`, `5` (*5/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/367769da361526411ffac12dae5fa19bb87c3f6c/5/Dockerfile)
--	[`5.6.14-alpine`, `5.6-alpine`, `5-alpine` (*5/alpine/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/367769da361526411ffac12dae5fa19bb87c3f6c/5/alpine/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `elasticsearch` does not support the currently selected architecture (`s390x`).
 
 # Quick reference
 

@@ -16,16 +16,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6` (*versions/library-3.6/x86_64/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/e2356fa734792d004f8dde5e515b42b6f350a45f/versions/library-3.6/x86_64/Dockerfile)
--	[`3.7` (*versions/library-3.7/x86_64/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/ca1eb9308380da0be8042c9af7a4bbe5ec00f34b/versions/library-3.7/x86_64/Dockerfile)
--	[`3.8` (*versions/library-3.8/x86_64/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/63a4b585539aec349a3b1b5109be7bfece856cff/versions/library-3.8/x86_64/Dockerfile)
--	[`3.9`, `latest` (*versions/library-3.9/x86_64/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c4f4c7a6e14d6efeb9a160da464717e03d2cc3ee/versions/library-3.9/x86_64/Dockerfile)
--	[`edge` (*versions/library-edge/x86_64/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/f98a67bfa97056988402850223740741b41551d3/versions/library-edge/x86_64/Dockerfile)
--	[`3.1` (*versions/library-3.1/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/bfaa70b8f29be1f55ec9f34a16965535109ba482/versions/library-3.1/Dockerfile)
--	[`3.2` (*versions/library-3.2/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/fa5398cb6bb54f0093b2ad3180cf3d903afe0a7a/versions/library-3.2/Dockerfile)
--	[`3.3` (*versions/library-3.3/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/7532f6996facee837af283f5259ad1d071b9bd4a/versions/library-3.3/Dockerfile)
--	[`3.4` (*versions/library-3.4/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/3943f4dedc41b7c6144610d3e99ad0f7083c2138/versions/library-3.4/Dockerfile)
--	[`3.5` (*versions/library-3.5/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/22c9c5706a8c7892eae7416761ec00c88160842b/versions/library-3.5/Dockerfile)
+-	[`3.6` (*versions/library-3.6/s390x/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/292b4c3fe4d0fb366d6acbc24a1f71462b97d1ea/versions/library-3.6/s390x/Dockerfile)
+-	[`3.7` (*versions/library-3.7/s390x/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/af2a01ed58e51d3eb8afbc93f9be9bf2e91f75cd/versions/library-3.7/s390x/Dockerfile)
+-	[`3.8` (*versions/library-3.8/s390x/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/5d9396de964f3accc5971521d5b684588c859990/versions/library-3.8/s390x/Dockerfile)
+-	[`3.9`, `latest` (*versions/library-3.9/s390x/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/969001ac645d66d00c884e8c69c8f4bd01645039/versions/library-3.9/s390x/Dockerfile)
+-	[`edge` (*versions/library-edge/s390x/Dockerfile*)](https://github.com/gliderlabs/docker-alpine/blob/c4307b8ffb4ccfb2096ec567980c3495ff4e6f94/versions/library-edge/s390x/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/alpine/badge/icon) (`s390x/alpine` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/alpine/)
 
 # Quick reference
 
@@ -68,7 +65,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.7
+FROM s390x/alpine:3.7
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
