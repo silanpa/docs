@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.6`, `7`, `latest` (*7.6/Dockerfile*)](https://github.com/oracle/container-images/blob/b2b2ce9ff42452c7f5803b37df4810680e82155e/7.6/Dockerfile)
--	[`7-slim` (*7-slim/Dockerfile*)](https://github.com/oracle/container-images/blob/b2b2ce9ff42452c7f5803b37df4810680e82155e/7-slim/Dockerfile)
--	[`6.10`, `6` (*6.10/Dockerfile*)](https://github.com/oracle/container-images/blob/b2b2ce9ff42452c7f5803b37df4810680e82155e/6.10/Dockerfile)
--	[`6-slim` (*6-slim/Dockerfile*)](https://github.com/oracle/container-images/blob/b2b2ce9ff42452c7f5803b37df4810680e82155e/6-slim/Dockerfile)
+-	[`7.6`, `7`, `latest` (*7.6/Dockerfile*)](https://github.com/oracle/container-images/blob/410244e35a9ca7d63398a0af75cf8a3f2f3ce026/7.6/Dockerfile)
+-	[`7-slim` (*7-slim/Dockerfile*)](https://github.com/oracle/container-images/blob/410244e35a9ca7d63398a0af75cf8a3f2f3ce026/7-slim/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/oraclelinux/badge/icon) (`arm64v8/oraclelinux` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/oraclelinux/)
 
 # Quick reference
 
@@ -57,7 +57,7 @@ Oracle Linux is an open-source operating system available under the GNU General 
 
 ## How to use these images
 
-The Oracle Linux images are intended for use in the **FROM** field of a downstream `Dockerfile`. For example, to use the latest optimized Oracle Linux 7 image, specify `FROM oraclelinux:7-slim`.
+The Oracle Linux images are intended for use in the **FROM** field of a downstream `Dockerfile`. For example, to use the latest optimized Oracle Linux 7 image, specify `FROM arm64v8/oraclelinux:7-slim`.
 
 ## Official Resources
 
